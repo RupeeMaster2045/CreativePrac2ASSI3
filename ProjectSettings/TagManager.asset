@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ground
+  - EggPickup
+  - EggGoal
   layers:
   - Default
   - TransparentFX
@@ -12,8 +13,8 @@ TagManager:
   - ground
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Death
   - 
   - 
   - 
