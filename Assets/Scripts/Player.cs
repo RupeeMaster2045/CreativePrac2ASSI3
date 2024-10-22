@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     public float dashingTime = 0.2f;
     public float dashingCooldown = 1f;
 
+    public Animator animator;
+
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
 
         // Move
         horizontal = Input.GetAxisRaw("Horizontal");
+        //animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         // Jump
         if (Input.GetButtonDown("Jump"))
@@ -163,7 +166,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("EggGoal") && Input.GetKeyDown(KeyCode.E))
         { 
             HoldingEgg = false;
-            Debug.Log("Egg droped");
+            Debug.Log("Egg dropped");
         }
 
         if (collision.gameObject.CompareTag("EggGoal"))
