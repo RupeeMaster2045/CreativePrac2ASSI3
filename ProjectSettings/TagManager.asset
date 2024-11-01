@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EggPickup
   - EggGoal
+  - Ground
   layers:
   - Default
   - TransparentFX
